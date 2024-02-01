@@ -12,6 +12,10 @@ The Calorie Counter project focuses on applying JavaScript algorithms and data s
 - Implementing calculations based on user-provided data.
 - Dynamically updating the user interface to display real-time results.
 
+## Project Link
+
+Visit the [Calorie Counter Project](<link-ul-proiectului-tau-aici>) on freeCodeCamp.
+
 ## Acknowledgements
 
 Special thanks to freeCodeCamp for providing the educational resources and practical projects that enhance programming skills.
