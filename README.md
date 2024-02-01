@@ -14,7 +14,7 @@ The Calorie Counter project focuses on applying JavaScript algorithms and data s
 
 ## Project Link
 
-Visit the [Calorie Counter Project](<link-ul-proiectului-tau-aici>) on freeCodeCamp.
+Visit the [Calorie Counter Project](https://stefaniapaduraru.github.io/calories-counter.github.io/) on freeCodeCamp.
 
 ## Acknowledgements
 
