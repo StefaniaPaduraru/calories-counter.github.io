@@ -19,16 +19,37 @@ function isInvalidInput(str) {
 function addEntry() {
   const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
   const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
-  const HTMLString = `
-  <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
-  <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
-  <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
+  let HTMLString;
+  if(entryDropdown.value!=='exercise'){
+  HTMLString = `
+  <br/>
+  <label for="${entryDropdown.value}-${entryNumber}-name">${entryNumber}. Food product</label>
+  <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Enter a value here" required />
+  <label for="${entryDropdown.value}-${entryNumber}-calories">${entryNumber}. Caloric Content </label>
   <input
     type="number"
     min="0"
     id="${entryDropdown.value}-${entryNumber}-calories"
-    placeholder="Calories"
-  />`;
+    placeholder="Enter a value here"
+    required
+  />
+  <br/>`;
+  }
+  else{
+    HTMLString = `
+  <br/>
+  <label for="${entryDropdown.value}-${entryNumber}-name">${entryNumber}. Activity Type  </label>
+  <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Enter a value here" required />
+  <label for="${entryDropdown.value}-${entryNumber}-calories">${entryNumber}. Calories Burned </label>
+  <input
+    type="number"
+    min="0"
+    id="${entryDropdown.value}-${entryNumber}-calories"
+    placeholder="Enter a value here"
+    required
+  />
+  <br/>`;
+  }
   targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
 

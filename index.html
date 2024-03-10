@@ -8,10 +8,12 @@
   </head>
   <body>
     <main>
-      <h1>Calorie Counter</h1>
+      <h1>📊 Calories Counter 📊</h1>
+      <br/>
+      <br/>
       <div class="container">
         <form id="calorie-counter">
-          <label for="budget">Budget</label>
+          <label for="budget">Calories Budget: </label>
           <input
             type="number"
             min="0"
@@ -19,26 +21,6 @@
             placeholder="Daily calorie budget"
             required
           />
-          <fieldset id="breakfast">
-            <legend>Breakfast</legend>
-            <div class="input-container"></div>
-          </fieldset>
-          <fieldset id="lunch">
-            <legend>Lunch</legend>
-            <div class="input-container"></div>
-          </fieldset>
-          <fieldset id="dinner">
-            <legend>Dinner</legend>
-            <div class="input-container"></div>
-          </fieldset>
-          <fieldset id="snacks">
-            <legend>Snacks</legend>
-            <div class="input-container"></div>
-          </fieldset>
-          <fieldset id="exercise">
-            <legend>Exercise</legend>
-            <div class="input-container"></div>
-          </fieldset>
           <div class="controls">
             <span>
               <label for="entry-dropdown">Add food or exercise:</label>
@@ -52,8 +34,29 @@
               <button type="button" id="add-entry">Add Entry</button>
             </span>
           </div>
+          <fieldset id="breakfast">
+            <legend>Breakfast ☕</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="lunch">
+            <legend>Lunch 🥗</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="dinner">
+            <legend>Dinner 🥂</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="snacks">
+            <legend>Snacks 🍪</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="exercise">
+            <legend>Exercise 🏃</legend>
+            <div class="input-container"></div>
+          </fieldset>
+         
           <div>
-            <button type="submit">
+            <button type="submit" id="submit">
               Calculate Remaining Calories
             </button>
             <button type="button" id="clear">Clear</button>
